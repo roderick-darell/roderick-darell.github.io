@@ -53,55 +53,5 @@
   "Méthodologie de projet",
   "Travail en équipe",
   "Rédaction technique"
-  ],
-  "companies": [
-    {
-      "name": "Google",
-      "url": "https://www.google.com"
-    },
-    {
-      "name": "Airbnb",
-      "url": "https://www.airbnb.com"
-    },
-    {
-      "name": "Microsoft",
-      "url": "https://www.microsoft.com"
-    },
-    {
-      "name": "Samsung",
-      "url": "https://www.samsung.com"
-    },
-    {
-      "name": "SoundCloud",
-      "url": "https://www.soundcloud.com"
-    },
-    {
-      "name": "Capgemini",
-      "url": "https://www.capgemini.com"
-    },
-    {
-      "name": "Workday",
-      "url": "https://www.workday.com"
-    },
-    {
-      "name": "JCDecaux",
-      "url": "https://www.jcdecaux.com"
-    },
-    {
-      "name": "Saint-Gobain",
-      "url": "https://www.saint-gobain.com"
-    },
-    {
-      "name": "SNCF",
-      "url": "https://www.sncf.com"
-    },
-    {
-      "name": "BNP Paribas",
-      "url": "https://www.bnpparibas.com"
-    },
-    {
-      "name": "Ministère de l'Extérieur",
-      "url": "https://www.diplomatie.gouv.fr"
-    }
   ]
 }
