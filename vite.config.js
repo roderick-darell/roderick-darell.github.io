@@ -1,90 +1,86 @@
-import { defineConfig } from 'vite';
-import layoutPlugin from './plugins/vite.layout-plugin.js';
-import metadataPlugin from './plugins/vite.metadata-plugin.js';
-import projectsPlugin from './plugins/vite.projects-plugin.js';
-import linksPlugin from './plugins/vite.links-plugin.js';
-import galleryPlugin from './plugins/vite.gallery-plugin.js';
-import pagesPlugin from './plugins/vite.pages-plugin.js';
+import { defineConfig } from "vite";
+import layoutPlugin from "./plugins/vite.layout-plugin.js";
+import metadataPlugin from "./plugins/vite.metadata-plugin.js";
+import projectsPlugin from "./plugins/vite.projects-plugin.js";
+import linksPlugin from "./plugins/vite.links-plugin.js";
+// import galleryPlugin from "./plugins/vite.gallery-plugin.js"; // Disabled: galleries removed
+// import pagesPlugin from "./plugins/vite.pages-plugin.js"; // Optional: disable if not needed
 
 export default defineConfig({
+  // GitHub Pages (root repo: roderick-darell.github.io)
+  base: "/",
+
   // Static site configuration
-  root: '.',
-  publicDir: 'public',
+  root: ".",
+  publicDir: "public",
 
   // Development server options
   server: {
     port: 3000,
     open: true,
-    host: true,
+    host: true
   },
 
   // Build options
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false, // Disable in production for smaller bundle
-    minify: 'terser', // Use terser for better JS minification
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: false,
+    minify: "terser",
     terserOptions: {
       compress: {
-        drop_console: true, // Remove console.* calls
-        drop_debugger: true, // Remove debugger statements
-        pure_funcs: ['console.log', 'console.info', 'console.debug'], // Remove specific functions
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ["console.log", "console.info", "console.debug"]
       },
-      format: {
-        comments: false, // Remove all comments
-      },
+      format: { comments: false }
     },
-    cssMinify: true, // Minify CSS
-    cssCodeSplit: false, // Generate single CSS file
-    reportCompressedSize: true, // Report gzipped sizes
-    chunkSizeWarningLimit: 1000, // Warn if chunk exceeds 1KB
+    cssMinify: true,
+    cssCodeSplit: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 1000,
+
+    // IMPORTANT: build ONLY index.html
     rollupOptions: {
       input: {
-        index: 'index.html',
-        privacy: 'pages/privacy.html',
-        photography: 'pages/photography.html',
-        videography: 'pages/videography.html',
-        discography: 'pages/discography.html',
+        index: "index.html"
       },
       output: {
-        manualChunks: undefined, // Single chunk for better caching
-        assetFileNames: 'assets/[name]-[hash][extname]', // Asset naming with hash
-        chunkFileNames: 'assets/[name]-[hash].js', // JS chunk naming with hash
-        entryFileNames: 'assets/[name]-[hash].js', // Entry file naming with hash
-      },
-    },
+        manualChunks: undefined,
+        assetFileNames: "assets/[name]-[hash][extname]",
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js"
+      }
+    }
   },
 
   // CSS preprocessing
   css: {
     preprocessorOptions: {
-      less: {
-        // LESS options
-        javascriptEnabled: true,
-      },
+      less: { javascriptEnabled: true }
     },
-    devSourcemap: true, // Source maps in dev
-    postcss: {
-      plugins: [], // Add postcss plugins if needed
-    },
+    devSourcemap: true,
+    postcss: { plugins: [] }
   },
 
   // Asset handling
-  assetsInclude: ['**/*.webp', '**/*.jpg', '**/*.png', '**/*.svg'],
+  assetsInclude: ["**/*.webp", "**/*.jpg", "**/*.png", "**/*.svg"],
 
   // Plugins
   plugins: [
-    layoutPlugin(), // Run first to merge layout.html with all pages
+    layoutPlugin(),
     metadataPlugin(),
     projectsPlugin(),
-    linksPlugin(),
-    galleryPlugin(), // Generic gallery plugin for photography, videography, and discography
-    pagesPlugin(),
+    linksPlugin()
+
+    // Disabled because you removed Galleries + their pages:
+    // galleryPlugin(),
+    // pagesPlugin(),
   ],
 
   // Optimize dependencies
   optimizeDeps: {
-    include: [], // Pre-bundle dependencies for faster dev
-    force: false, // Force re-optimization
-  },
+    include: [],
+    force: false
+  }
 });
