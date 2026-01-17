@@ -3,25 +3,20 @@ import layoutPlugin from "./plugins/vite.layout-plugin.js";
 import metadataPlugin from "./plugins/vite.metadata-plugin.js";
 import projectsPlugin from "./plugins/vite.projects-plugin.js";
 import linksPlugin from "./plugins/vite.links-plugin.js";
-// import galleryPlugin from "./plugins/vite.gallery-plugin.js"; // Disabled: galleries removed
-// import pagesPlugin from "./plugins/vite.pages-plugin.js"; // Optional: disable if not needed
+import pagesPlugin from "./plugins/vite.pages-plugin.js";
 
 export default defineConfig({
-  // GitHub Pages (root repo: roderick-darell.github.io)
   base: "/",
 
-  // Static site configuration
   root: ".",
   publicDir: "public",
 
-  // Development server options
   server: {
     port: 3000,
     open: true,
     host: true
   },
 
-  // Build options
   build: {
     outDir: "dist",
     assetsDir: "assets",
@@ -40,47 +35,28 @@ export default defineConfig({
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1000,
 
-    // IMPORTANT: build ONLY index.html
+    // ⚠️ BUILD UNIQUEMENT index.html
     rollupOptions: {
       input: {
         index: "index.html"
-      },
-      output: {
-        manualChunks: undefined,
-        assetFileNames: "assets/[name]-[hash][extname]",
-        chunkFileNames: "assets/[name]-[hash].js",
-        entryFileNames: "assets/[name]-[hash].js"
       }
     }
   },
 
-  // CSS preprocessing
   css: {
     preprocessorOptions: {
       less: { javascriptEnabled: true }
     },
-    devSourcemap: true,
-    postcss: { plugins: [] }
+    devSourcemap: true
   },
 
-  // Asset handling
   assetsInclude: ["**/*.webp", "**/*.jpg", "**/*.png", "**/*.svg"],
 
-  // Plugins
   plugins: [
     layoutPlugin(),
     metadataPlugin(),
     projectsPlugin(),
-    linksPlugin()
-
-    // Disabled because you removed Galleries + their pages:
-    // galleryPlugin(),
-    // pagesPlugin(),
-  ],
-
-  // Optimize dependencies
-  optimizeDeps: {
-    include: [],
-    force: false
-  }
+    linksPlugin(),
+    pagesPlugin() // ✅ INDISPENSABLE pour {{SKILLS}}, {{PROJECTS}}, etc.
+  ]
 });
