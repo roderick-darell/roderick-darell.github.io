@@ -108,12 +108,35 @@ export default function metadataPlugin(options = {}) {
         html = html.replace(/{{ABOUT_DESCRIPTION}}/g, descriptionHTML);
 
         // Generate skills HTML
-        const skillsHTML = metadata.skills
-          .map(
-            (skill) =>
-              `<span class="skill-tag" role="listitem">${skill}</span>`
-          )
-          .join('\n');
+      // Generate skills HTML (supports Array OR Object)
+let skillsHTML = '';
+
+if (Array.isArray(metadata.skills)) {
+  // Original behavior: array of strings
+  skillsHTML = metadata.skills
+    .map((skill) => `<span class="skill-tag" role="listitem">${skill}</span>`)
+    .join('\n');
+} else if (metadata.skills && typeof metadata.skills === 'object') {
+  // New behavior: categories object { "Category": ["A","B"] }
+  skillsHTML = Object.entries(metadata.skills)
+    .map(([category, items]) => {
+      const chips = (Array.isArray(items) ? items : [])
+        .map((skill) => `<span class="skill-tag" role="listitem">${skill}</span>`)
+        .join('\n');
+
+      return `
+        <div class="skill-group" role="listitem" aria-label="${category}">
+          <h4 class="skill-group-title">${category}</h4>
+          <div class="skill-group-chips" role="list">${chips}</div>
+        </div>
+      `.trim();
+    })
+    .join('\n');
+}
+
+// Replace skills placeholder
+html = html.replace(/{{SKILLS}}/g, skillsHTML);
+
 
         // Replace skills placeholder
         html = html.replace(/{{SKILLS}}/g, skillsHTML);

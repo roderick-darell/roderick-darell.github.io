@@ -4,6 +4,7 @@ import metadataPlugin from "./plugins/vite.metadata-plugin.js";
 import projectsPlugin from "./plugins/vite.projects-plugin.js";
 import linksPlugin from "./plugins/vite.links-plugin.js";
 import pagesPlugin from "./plugins/vite.pages-plugin.js";
+import experiencesPlugin from "./plugins/vite.experiences-plugin.js";
 
 export default defineConfig({
   base: "/",
@@ -52,11 +53,13 @@ export default defineConfig({
 
   assetsInclude: ["**/*.webp", "**/*.jpg", "**/*.png", "**/*.svg"],
 
-  plugins: [
-    layoutPlugin(),
-    metadataPlugin(),
-    projectsPlugin(),
-    linksPlugin(),
-    pagesPlugin() // ✅ INDISPENSABLE pour {{SKILLS}}, {{PROJECTS}}, etc.
-  ]
+ plugins: [
+  layoutPlugin(),
+  metadataPlugin(),
+  projectsPlugin(),
+  linksPlugin(),
+  experiencesPlugin(),
+  pagesPlugin()
+]
+
 });
