@@ -1,192 +1,96 @@
 [
   {
     "type": "dev",
-    "date": "10/2025",
-    "title": "Portfolio Template",
-    "headline": "Modern Portfolio Website Template",
-    "description": "A free, modern, performant, and responsive portfolio website template built with Vite, LESS, and vanilla JavaScript.",
-    "details": "This portfolio template is a fully static, data-driven website that generates plain HTML files at build time. It's perfect for creative professionals, developers, artists, and musicians who want a professional portfolio without CMS subscriptions. Features include a responsive design, modern UI with animations, SEO optimization, gallery pages for photos/videos/music, and easy customization via JSON files.",
-    "snapshot": "img/snapshot/portfolio.webp",
-    "tags": ["Portfolio Website", "Vite", "LESS", "Vanilla JS", "GitHub Template", "Static Site", "Open Source"],
+    "date": "2025",
+    "title": "Vélos en libre-service",
+    "icon": "img/icon/bike.ico",
+    "headline": "Gestion complète d’un système de vélos (Java)",
+    "description": "Application Java de gestion d’un service de vélos : stock, disponibilité, contraintes, cycle de vie, supervision du centre de contrôle, vélos volés, réparateurs, etc.",
+    "details": "Projet Java orienté conception : gestion du stock et de la disponibilité, application de contraintes métier, supervision du cycle normal et des incidents (vol, maintenance, réparations), avec une architecture structurée basée sur des design patterns.",
+    "snapshot": "img/snapshot/bike-sharing.webp",
+    "tags": ["Java", "OOP", "Design Patterns", "Gestion de stock", "Contraintes métier"],
     "links": [
-      {
-        "text": "View Code",
-        "url": "https://github.com/saidelimam/portfolio"
-      }
-    ],
-    "hidden": true
+      { "text": "View Code", "url": "https://github.com/roderick-darell/projet_gestion_velo.git" }
+    ]
   },
+
   {
     "type": "dev",
-    "date": "01/2025",
-    "title": "GoCollab.cc",
-    "icon": "img/icon/gocollab.ico",
-    "headline": "Social Network for Creative Professionals",
-    "description": "A collaborative platform for creative professionals, enabling seamless project management, team coordination, and resource sharing in the creative industry.",
-    "details": "GoCollab is a comprehensive platform designed to connect creative professionals, streamline project workflows, and facilitate collaboration across different creative disciplines. The platform features real-time communication, project tracking, resource management, and portfolio showcasing capabilities.",
-    "snapshot": "img/snapshot/gocollab.jpg",
-    "tags": ["Social Network", "React", "Node.js", "Cloudflare", "PostgreSQL", "PWA", "AI"],
+    "date": "2025",
+    "title": "Arès Demeter",
+    "icon": "img/icon/game.ico",
+    "headline": "Modélisation complète du jeu (Java)",
+    "description": "Modélisation Java du jeu Arès Demeter : affrontements multi-joueurs et lancement de parties aléatoires.",
+    "details": "Implémentation orientée objet d’un jeu de plateau/stratégie : gestion des règles, états de partie, joueurs multiples, et génération de partie aléatoire.",
+    "snapshot": "img/snapshot/ares-demeter.webp",
+    "tags": ["Java", "Game Design", "Modélisation", "Multijoueur"],
     "links": [
-      {
-        "text": "Visit Website",
-        "url": "https://www.gocollab.cc"
-      },
-      {
-        "text": "Play Store",
-        "url": "https://play.google.com/store/apps/details?id=cc.gocollab.twa"
-      },
-      {
-        "text": "Launch App",
-        "url": "https://app.gocollab.cc"
-      }
+      { "text": "View Code", "url": "https://github.com/roderick-darell/projet_Ares_Demeter.git" }
     ]
   },
-  {
-    "type": "film",
-    "date": "01/2024",
-    "title": "The Knife",
-    "icon": "img/icon/quazar.ico",
-    "headline": "Le Couteau",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/nJJq3_DXzGg?si=VigjUldovcJeJBV5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "description": "A short film highlighting the true value of hard work, dedication, craftsmanship, and finding joy and peace in the simple pleasures of life.",
-    "details": "The true value of hard work lies not just in the outcome but in the process itself. The short film highlights the importance of dedication, craftsmanship, and finding joy and peace in the simple pleasures of life, out of our busy and stressing schedules.",
-    "credits": "Pierre Jambu, Emre Okan, Christoffer Moe Ditlevsen, Said Elimam",
-    "snapshot": "img/snapshot/the-knife.webp",
-    "tags": ["Short Film", "Nikon Film Festival"],
-    "links": [
-      {
-        "text": "Watch on YouTube",
-        "url": "https://www.youtube.com/watch?v=nJJq3_DXzGg"
-      },
-      {
-        "text": "IMDb",
-        "url": "https://www.imdb.com/title/tt30869506/"
-      }
-    ]
-  },
-  {
-    "type": "film",
-    "date": "11/2023",
-    "title": "Reflet d'une âme",
-    "icon": "img/icon/quazar.ico",
-    "headline": "Reflet d'une âme",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/Zc6LZIPo1Ig?si=VigjUldovcJeJBV5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "description": "An experimental and poetic short film expressing the duality between good and evil.",
-    "details": "An experimental and poetic short film that personifies fire through a woman, expressing the duality between good and evil. The Fire-Woman dances with grace but also unveils the devastating consequences of her poorly controlled power on Earth. But is it her fault?",
-    "credits": "Marie Valentin, Alma Chomel, Valentina Gribanova, Tarik Marchoud, Ricardo Fey, Said Elimam",
-    "snapshot": "img/snapshot/refletduneame.webp",
-    "tags": ["Short Film", "Experimental", "Nikon Film Festival", "Special FX"],
-    "links": [
-      {
-        "text": "Watch on YouTube",
-        "url": "https://www.youtube.com/watch?v=Zc6LZIPo1Ig"
-      },
-      {
-        "text": "IMDb",
-        "url": "https://www.imdb.com/title/tt30056682/"
-      }
-    ],
-    "hidden": true
-  },
-  {
-    "type": "music",
-    "date": "07/2023",
-    "title": "Bequest Album",
-    "icon": "img/icon/quazar.ico",
-    "headline": "Bequest Album",
-    "embed": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/0XFgBWBNXywegwqQKEbV1W?utm_source=generator&theme=0\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-    "description": "A musical journey combining ambient soundscapes, orchestral textures, and emotional storytelling to create a unique auditory experience.",
-    "details": "Bequest is an ambient orchestral album that showcases a fusion of modern production techniques with classical composition approaches. The album features intricate sound design, atmospheric melodies, and dynamic arrangements that create an immersive listening experience.",
-    "snapshot": "img/snapshot/bequest.jpg",
-    "tags": ["Album", "Orchestral"],
-    "links": [
-      {
-        "text": "Listen on Spotify",
-        "url": "https://open.spotify.com/album/0XFgBWBNXywegwqQKEbV1W"
-      }
-    ]
-  },
-  {
-    "type": "film",
-    "date": "11/2022",
-    "title": "Freedom",
-    "headline": "Freedom",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/SQDebYJCxrc?si=wesfPrZjRjDDryYB\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "description": "A ballerina experiments freedom inside of a Parisian gallery and lets her body take control.",
-    "details": "A ballerina experiments freedom inside of a Parisian gallery and lets her body take control.",
-    "credits": "Sara Michelle Murawski, Michelene Murawski, Said Elimam",
-    "snapshot": "img/snapshot/freedom.webp",
-    "tags": ["Short Film", "Dance", "Ballet"],
-    "links": [
-      {
-        "text": "Watch on YouTube",
-        "url": "https://www.youtube.com/watch?v=SQDebYJCxrc"
-      }
-    ]
-  },
-  {
-    "type": "community",
-    "date": "05/2018",
-    "title": "A Life Experience",
-    "icon": "img/icon/alifeexp.ico",
-    "headline": "Building a Global Community Around Talent and Travel",
-    "description": "An influencer brand that created a vibrant community of tens of thousands of followers across Facebook, Instagram, and YouTube, celebrating talented individuals from around the world through photos and videos.",
-    "details": "A Life Experience was an innovative influencer brand launched in 2018 that successfully built a global community around the themes of Travel and Talent. Over the course of three years, the brand amassed tens of thousands of followers across major social media platforms, creating a space where photos and videos were shared featuring talented individuals from different locations worldwide. The brand executed numerous large-scale projects including fashion shoots, dance performances, and video series showcasing Paris tourist spots. Hundreds of people participated in these collaborative projects, contributing to a rich tapestry of creative content. The brand operated from 2018 to 2021, creating lasting connections and memorable experiences before closing as a completed life experience.",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/qfpU2F2pkqo?si=VigjUldovcJeJBV5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "tags": ["Influencer Brand", "Community", "Social Media", "Talent", "Travel", "Fashion", "Dance", "Paris"],
-    "links": [
-      {
-        "text": "YouTube Channel",
-        "url": "https://www.youtube.com/channel/UCMRFhJDj8UBDtjYnvs7HXEg"
-      },
-      {
-        "text": "Facebook Page",
-        "url": "https://www.facebook.com/ALifeExp/"
-      },
-      {
-        "text": "Videography Gallery",
-        "url": "/videography?project=alifeexp"
-      }
-    ]
-  },
+
   {
     "type": "dev",
-    "date": "05/2014",
-    "title": "DCP Setup Maker",
-    "icon": "img/icon/dcpsetupmaker.ico",
-    "headline": "Cross-Platform Installer Generator",
-    "description": "\"All in all, DCP Setup Maker comes packed with a powerful suite of tools for helping you create Java installation packages and customize them in detail.\" - Softpedia.com",
-    "details": "What started as a dev project for a european company, then released open-source. The software got rated by biggest software hosts as a powerful set of tools with 4 stars out of 5, and registered tens of thousands of downloads from companies worldwide. DCP Setup Maker is a Java program to generate complex, stable and cross-platform Java installers. It provides an intuitive UI and exceptional ease of use to build complex installers with large amounts of files through a wizard-like interface.",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube-nocookie.com/embed/zlg3C3c0Pbg?si=Ru7cYqWE60gqQbUk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "snapshot": "img/snapshot/dcpsetupmaker.webp",
-    "tags": ["Java", "Cross-Platform", "Open Source", "IzPack"],
+    "date": "2024",
+    "title": "Cahier des charges (confidentiel)",
+    "icon": "img/icon/lock.ico",
+    "headline": "Spécifications fonctionnelles & correction d’outil métier",
+    "description": "Rédaction d’un cahier des charges complet pour corriger des problèmes métier et structurels d’un logiciel (document non publiable).",
+    "details": "Dans le cadre d’une mission de contrôle d’outil numérique, rédaction d’un cahier des charges détaillé à destination des développeurs : analyse des dysfonctionnements, objectifs de refonte/correctifs, exigences, contraintes, priorisation. Document confidentiel : pas de code ni lien public.",
+    "snapshot": "img/snapshot/confidential.webp",
+    "tags": ["Rédaction", "Cahier des charges", "Analyse métier", "Confidentiel"],
     "links": [
-      {
-        "text": "Visit Website",
-        "url": "https://dev.saidelimam.com/setupmaker/"
-      },
-      {
-        "text": "View Code",
-        "url": "https://github.com/DevComPack/setupmaker"
-      }
+  {
+    "text": "Confidential project – details available on request",
+    "url": "#"
+  }
+]
+
+  },
+
+  {
+    "type": "dev",
+    "date": "2024",
+    "title": "Paris 2024 Football Simulator",
+    "icon": "img/icon/football.ico",
+    "headline": "Simulation du tournoi jusqu’à la victoire finale",
+    "description": "Site web HTML/CSS/JavaScript simulant les matchs de football des JO Paris 2024 jusqu’à la victoire finale.",
+    "details": "Application web front : simulation de matchs, enchaînement du bracket/tournoi, affichage des résultats, progression jusqu’au vainqueur final.",
+    "snapshot": "img/snapshot/paris2024-football.webp",
+    "tags": ["HTML", "CSS", "JavaScript", "Simulation", "Web"],
+    "links": [
+      { "text": "View Code", "url": "https://github.com/roderick-darell/Modelisation_web_jeu_olympique.git" },
+      { "text": "Live Demo", "url": "A_COMPLETER_URL_DEMO" }
     ]
   },
+
   {
-    "type": "community",
-    "date": "07/2011",
-    "title": "GDG Casablanca",
-    "icon": "img/icon/gdgcasablanca.ico",
-    "headline": "Google Developer Group | Casablanca",
-    "credits": "Google, Microsoft, Samsung",
-    "description": "I founded this tech group to host events at schools, campuses or online. Multiple sponsors joined in and got involved with the group, like Google, Microsoft, Samsung and others.",
-    "details": "As a Google Student Ambassador, I founded GDG Casablanca in July 2011 as a Google Developer Group. This tech group was created to host events at schools, campuses, or online. Multiple sponsors joined in and got involved with the group, including Google, Microsoft, Samsung, and others. We also got important speakers join our events. Events hosted by the group included: Google World EMSI and The Google+ Way. The group won the price of best Marketing strategy among all groups in MENA region.",
-    "embed": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/LnlnQDHdqZo?si=VigjUldovcJeJBV5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-    "tags": ["Google Developer Group", "Community", "Tech Events", "Google Student Ambassador"],
+    "type": "dev",
+    "date": "2024",
+    "title": "Optimisation AMPL",
+    "icon": "img/icon/opt.ico",
+    "headline": "Modélisation linéaire : production & logistique",
+    "description": "Modélisation AMPL des contraintes d’une entreprise de plats (recettes, production, logistique) avec objectif de maximisation du profit.",
+    "details": "Formulation d’un programme linéaire (variables, contraintes, objectifs) : capacité, ressources, logistique, recettes, etc. Résolution orientée maximisation des profits.",
+    "snapshot": "img/snapshot/ampl-optimization.webp",
+    "tags": ["AMPL", "Optimisation", "Programmation linéaire", "Supply Chain"],
     "links": [
-      {
-        "text": "Facebook Page",
-        "url": "https://www.facebook.com/GDG.Casablanca"
-      }
+      { "text": "View Code", "url": "https://github.com/roderick-darell/Modelisation_lineaire_maximization_de-profit.git" }
+    ]
+  },
+
+  {
+    "type": "dev",
+    "date": "2024",
+    "title": "Mushroom KNN",
+    "icon": "img/icon/ml.ico",
+    "headline": "Prédiction comestible vs vénéneux",
+    "description": "Analyse d’un dataset ~5000 champignons + algorithme KNN pour prédire comestible/vénéneux, avec programme Python final.",
+    "details": "Collecte/analyse des données (Orange), préparation, puis implémentation KNN et programme Python retournant la prédiction comestible/vénéneux.",
+    "snapshot": "img/snapshot/mushroom-knn.webp",
+    "tags": ["Python", "Machine Learning", "KNN", "Data Analysis", "Orange"],
+    "links": [
+      { "text": "View Code", "url": "https://github.com/roderick-darell/projet_modelisation_prediction_knn.git" }
     ]
   }
 ]

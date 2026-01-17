@@ -962,3 +962,232 @@ footer {
     }
   }
 }
+.experience-timeline {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+  position: relative;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.experience-marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.experience-card {
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.22);
+  backdrop-filter: blur(8px);
+}
+
+.experience-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.experience-title h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.experience-meta {
+  margin: 6px 0 0;
+  opacity: 0.9;
+}
+
+.experience-dates {
+  font-weight: 600;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.experience-bullets {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  line-height: 1.65;
+}
+
+.experience-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+/* =========================
+   SKILLS - clean + readable
+   ========================= */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Si le template génère des <span> ou <a> ou <div> dans {{SKILLS}},
+   on cible tous les enfants directs */
+.skills > * {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(6px);
+
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* Autorise le retour à la ligne si un skill est long */
+@media (max-width: 520px) {
+  .skills {
+    justify-content: flex-start;
+  }
+
+  .skills > * {
+    white-space: normal;
+    border-radius: 16px;
+    padding: 10px 12px;
+  }
+}
+/* =========================
+   EXPERIENCE - readable cards
+   ========================= */
+
+.experience-timeline {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.experience-marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.experience-card {
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.20);
+}
+
+.experience-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.experience-title h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.experience-meta {
+  margin: 6px 0 0;
+  opacity: 0.9;
+}
+
+.experience-dates {
+  font-weight: 600;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.experience-bullets {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  line-height: 1.65;
+}
+
+.experience-bullets li {
+  margin: 6px 0;
+}
+
+.experience-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+  .experience-marker {
+    display: none;
+  }
+  .experience-top {
+    grid-template-columns: 1fr;
+  }
+  .experience-dates {
+    white-space: normal;
+  }
+}
+
+
+

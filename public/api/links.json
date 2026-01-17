@@ -1,7 +1,4 @@
 [
-
-
-
   {
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/in/darelltchinde",
@@ -11,15 +8,22 @@
 
   {
     "platform": "GitHub",
-    "url": "https://github.com/saidelimam",
+    "url": "https://github.com/roderick-darell",
     "icon": "fab fa-github",
     "label": "Review my code on GitHub"
   },
 
   {
     "platform": "Email",
-    "url": "mailto:tchinderoderick2006@gmail.com",
+    "url": "https://mail.google.com/mail/?view=cm&fs=1&to=tchinderoderick2006@gmail.com",
     "icon": "fas fa-envelope",
-    "label": "Send me an email"
+    "label": "Send me an email via Gmail"
+  },
+
+  {
+    "platform": "CV",
+    "url": "/cv/Roderick_Darell_CV_Data.pdf",
+    "icon": "fas fa-file-pdf",
+    "label": "Download my CV (PDF)"
   }
 ]

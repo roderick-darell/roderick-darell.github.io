@@ -9,49 +9,53 @@
     "website": "https://roderick-darell.github.io/"
   },
   "about": {
-    "description":"Étudiant en informatique passionné par les mathématiques, l’analyse de données et le machine learning. J’ai travaillé sur des projets de data analysis, de modélisation et d’algorithmes, en utilisant Python et des bibliothèques scientifiques. Je recherche un stage ou une alternance pour approfondir mes compétences en data science et intelligence artificielle, et contribuer à des projets concrets à forte valeur ajoutée."
-  },
-  "skills": [
-  "Python",
-  "Java",
-  "C / C++ (bases)",
-  "JavaScript",
-  "SQL",
-  "HTML / CSS",
-
-  "Programmation orientée objet (POO)",
-  "Structures de données (listes, piles, files, arbres)",
-  "Algorithmes (tri, recherche, complexité)",
-  "Analyse de complexité (Big O)",
-  "Mathématiques discrètes",
-  "Algèbre linéaire (vecteurs, matrices)",
-  "Probabilités & statistiques",
-
-  "Analyse de données",
-  "Nettoyage & préparation des données",
-  "Visualisation de données",
-  "Pandas",
-  "NumPy",
-  "Matplotlib / Seaborn",
-
-  "Machine Learning (bases)",
-  "Régression linéaire / logistique",
-  "Classification",
-  "Clustering (K-means)",
-  "Scikit-learn",
-
-  "Bases de données relationnelles",
-  "MySQL / PostgreSQL",
-  "Conception de schémas",
-  "Requêtes avancées (JOIN, GROUP BY)",
-
-  "Linux",
-  "Git / GitHub",
-  "Environnements virtuels Python (venv)",
-  "Notebooks Jupyter",
-
-  "Méthodologie de projet",
-  "Travail en équipe",
-  "Rédaction technique"
+  "description": "Je m’appelle Roderick Darell, étudiant passionné par la data et convaincu de son rôle central dans la prise de décision moderne. Je m’intéresse au cycle complet de la donnée, depuis la collecte, le nettoyage et l’analyse, jusqu’à l’extraction de sa valeur utile permettant de formuler des observations pertinentes, de produire des prédictions et d’aider à des décisions efficaces et éclairées. Actuellement étudiant en Licence Informatique & Mathématiques à l’Université de Lille, je développe une solide base en analyse de données, programmation et modélisation, avec une forte appétence pour la data appliquée à la finance et à l’optimisation. Je suis aujourd’hui à la recherche d’un stage et/ou d’une alternance en analyse de données, en France ou à l’international, au sein d’un projet porteur de sens, à fort impact, où je pourrai mettre mes compétences techniques au service de problématiques concrètes."
+}
+,
+  "skills": {
+  "Programming Languages": [
+    "Python",
+    "Java",
+    "SQL",
+    "JavaScript",
+    "AMPL"
+  ],
+  "Data Analysis & Machine Learning": [
+    "Data Cleaning",
+    "Exploratory Data Analysis (EDA)",
+    "Feature Engineering",
+    "Supervised Learning (KNN)",
+    "Model Evaluation",
+    "Decision Support"
+  ],
+  "Libraries & Tools": [
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "Matplotlib",
+    "Orange Data Mining"
+  ],
+  "Mathematics & Optimization": [
+    "Linear Algebra",
+    "Statistics",
+    "Linear Programming",
+    "Optimization under Constraints",
+    "Profit Maximization Models"
+  ],
+  "Software Engineering": [
+    "Object-Oriented Programming (OOP)",
+    "Design Patterns",
+    "Modular Architecture",
+    "Requirements Analysis"
+  ],
+  "Environments": [
+    "Git / GitHub",
+    "VS Code",
+    "Linux",
+    "Windows",
+    "Jupyter Notebooks",
+    "HTML / CSS"
   ]
+}
+
 }

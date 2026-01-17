@@ -109,4 +109,68 @@ function initializeBackgroundAnimations() {
   
   window.addEventListener('scroll', scrollHandler, { passive: true });
 }
+async function loadExperiences() {
+  const container = document.querySelector(".experience-timeline");
+  if (!container) return;
+
+  const res = await fetch("/api/experiences.json");
+  const experiences = await res.json();
+
+  const formatRange = (start, end) => {
+    const fmt = (v) => {
+      if (v === "present") return "Present";
+      const [y, m] = v.split("-");
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      return `${monthNames[Number(m) - 1]} ${y}`;
+    };
+    return `${fmt(start)} — ${fmt(end)}`;
+  };
+
+  container.innerHTML = experiences
+    .map((e) => {
+      const tags = (e.tags || [])
+        .map((t) => `<span class="exp-tag">${t}</span>`)
+        .join("");
+
+      const bullets = (e.bullets || [])
+        .map((b) => `<li>${b}</li>`)
+        .join("");
+
+      return `
+        <article class="experience-item" role="listitem">
+          <div class="experience-marker" aria-hidden="true">
+            <i class="fas ${e.icon || "fa-briefcase"}"></i>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-top">
+              <div class="experience-title">
+                <h3>${e.title}</h3>
+                <p class="experience-meta">
+                  <strong>${e.company}</strong> • ${e.location}
+                </p>
+              </div>
+
+              <div class="experience-dates" aria-label="Experience date range">
+                ${formatRange(e.start, e.end)}
+              </div>
+            </div>
+
+            <ul class="experience-bullets">
+              ${bullets}
+            </ul>
+
+            <div class="experience-tags" aria-label="Experience tags">
+              ${tags}
+            </div>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+// Appelle-la au chargement (en plus de tes fonctions existantes)
+loadExperiences();
+
 

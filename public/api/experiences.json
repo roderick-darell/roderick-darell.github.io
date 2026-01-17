@@ -1,0 +1,58 @@
+[
+  {
+    "start": "2025-09",
+    "end": "present",
+    "title": "Moniteur étudiant & tuteur en mathématiques",
+    "company": "Université de Lille (Lilliad Learning Center)",
+    "location": "Lille, France",
+    "icon": "fa-graduation-cap",
+    "bullets": [
+      "Accueil, orientation et assistance aux étudiants (espaces & ressources numériques).",
+      "Rôle de relais : transmission des informations, remontée des besoins, contribution au bon fonctionnement du service.",
+      "Tutorat en mathématiques (L1) : algèbre, analyse, logique, méthodologie et résolution de problèmes."
+    ],
+    "tags": ["Pédagogie", "Rigueur", "Communication"]
+  },
+  {
+    "start": "2025-07",
+    "end": "2026-01",
+    "title": "Assistant administratif & suivi des outils numériques",
+    "company": "PRESTI LIFE",
+    "location": "Lille, France",
+    "icon": "fa-chart-line",
+    "bullets": [
+      "Supervision quotidienne des outils (site web + logiciel métier) : détection proactive des anomalies et réduction des incidents récurrents (~30%).",
+      "Identification des points de friction et formalisation structurée des besoins utilisateurs transmis aux développeurs.",
+      "Préparation paie, facturation, suivi de dossiers et organisation des plannings avec fiabilisation des délais."
+    ],
+    "tags": ["Analyse", "Documentation", "Amélioration continue"]
+  },
+  {
+    "start": "2024-03",
+    "end": "2025-07",
+    "title": "Employé commercial",
+    "company": "Carrefour City",
+    "location": "Wasquehal, France",
+    "icon": "fa-store",
+    "bullets": [
+      "Mise en rayon, facing, contrôle des dates (DLC/DDM) et gestion des ruptures pour assurer la disponibilité.",
+      "Accueil et conseil client : écoute, orientation et résolution de problèmes en situation réelle.",
+      "Encaissement et procédures : rigueur, fiabilité, gestion de flux et respect des consignes."
+    ],
+    "tags": ["Relation client", "Organisation", "Fiabilité"]
+  },
+  {
+    "start": "2024-01",
+    "end": "2025-02",
+    "title": "Secrétaire d’examen",
+    "company": "Université de Lille",
+    "location": "Lille, France",
+    "icon": "fa-clipboard-check",
+    "bullets": [
+      "Surveillance des examens : respect du cadre, gestion du temps et application des consignes.",
+      "Contrôle des identités, distribution/récupération des sujets et copies, traitement des incidents.",
+      "Communication claire et posture professionnelle dans un environnement sous pression."
+    ],
+    "tags": ["Rigueur", "Cadre", "Responsabilité"]
+  }
+]
