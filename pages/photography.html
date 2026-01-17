@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Photography Gallery - {{TITLE}}</title>
+
+    <meta
+      name="keywords"
+      content="photography, portfolio, Said Elimam, gallery, professional photography, visual arts"
+    />
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="container" role="navigation" aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li role="listitem"><a href="/" aria-label="Go to Home">Home</a></li>
+          <li role="listitem"><a href="/photography" aria-label="Go to Photography gallery">Photography</a></li>
+          <li role="listitem"><a href="/videography" aria-label="Go to Videography gallery">Videography</a></li>
+          <li role="listitem"><a href="/discography" aria-label="Go to Discography gallery">Discography</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section id="photography-gallery" class="gallery-section" aria-labelledby="photography-heading">
+        <div class="gallery-container">
+          <h1 id="photography-heading" class="gallery-title">Photography</h1>
+
+          <div class="photo-mosaic" role="list" aria-label="Photography gallery">{{PHOTOS}}</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <div class="image-modal-backdrop"></div>
+      <div class="image-modal-content">
+        <div class="image-modal-loading">
+          <div class="loading-spinner"></div>
+        </div>
+        <img src="" alt="" class="image-modal-img" draggable="false" />
+      </div>
+    </div>
+
+    <script type="module" src="../src/js/photography.js"></script>
+  </body>
+</html>
