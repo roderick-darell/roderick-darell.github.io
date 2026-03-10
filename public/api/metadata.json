@@ -4,12 +4,12 @@
   "person": {
     "name": "Roderick-darell Tchinde",
     "location": "Lille,France",
-    "tagline": "Étudiant en L3 informatique informatique passionné par la science des donnees en Recherche stage/alternance dès fin avril",
+    "tagline": "Étudiant en L3 Informatique–Mathématiques, passionné par la data science et l’analyse de données pour la prise de décisions stratégiques. Actuellement à la recherche d’un stage ou d’une alternance dès fin avril.",
     "fullName": "TCHINDE SINGHE RODERICK DARELL Data Analyst",
     "website": "https://roderick-darell.github.io/"
   },
   "about": {
-  "description": "Je m’appelle Roderick Darell, étudiant passionné par la data et convaincu de son rôle central dans la prise de décision moderne. Je m’intéresse au cycle complet de la donnée, depuis la collecte, le nettoyage et l’analyse, jusqu’à l’extraction de sa valeur utile permettant de formuler des observations pertinentes, de produire des prédictions et d’aider à des décisions efficaces et éclairées. Actuellement étudiant en Licence Informatique & Mathématiques à l’Université de Lille, je développe une solide base en analyse de données, programmation et modélisation, avec une forte appétence pour la data appliquée à la finance et à l’optimisation. Je suis aujourd’hui à la recherche d’un stage et/ou d’une alternance en analyse de données, en France ou à l’international, au sein d’un projet porteur de sens, à fort impact, où je pourrai mettre mes compétences techniques au service de problématiques concrètes."
+  "description": "Je suis étudiant en Informatique–Mathématiques, passionné par l’analyse et la valorisation des données. Je m’intéresse particulièrement au cycle de vie de la donnée, depuis sa collecte et son traitement jusqu’à l’extraction d’informations utiles permettant d’orienter la prise de décision.\n\nAu-delà de la maîtrise des outils techniques, je suis convaincu qu’une bonne analyse repose avant tout sur la compréhension des concepts et des structures sous-jacentes aux données étudiées. C’est cette approche qui guide ma manière d’aborder les problèmes et de concevoir des solutions.\n\nMa formation en Informatique et Mathématiques me permet de combiner rigueur analytique, modélisation et compétences techniques pour mieux comprendre et résoudre des problématiques complexes liées aux données.\n\nToujours curieux et motivé, je cherche constamment à développer mes compétences afin de transformer les données en informations pertinentes et exploitables."
 }
 ,
   "skills": {
@@ -18,15 +18,17 @@
     "Java",
     "SQL",
     "JavaScript",
-    "AMPL"
+    "AMPL" ,
+    "c"
+
   ],
   "Data Analysis & Machine Learning": [
     "Data Cleaning",
-    "Exploratory Data Analysis (EDA)",
-    "Feature Engineering",
+    "power bi ",
+    "power apps ",
     "Supervised Learning (KNN)",
-    "Model Evaluation",
-    "Decision Support"
+    "Excel",
+    "
   ],
   "Libraries & Tools": [
     "Pandas",
@@ -38,16 +40,9 @@
   "Mathematics & Optimization": [
     "Linear Algebra",
     "Statistics",
-    "Linear Programming",
-    "Optimization under Constraints",
-    "Profit Maximization Models"
+    "Linear Programming"
   ],
-  "Software Engineering": [
-    "Object-Oriented Programming (OOP)",
-    "Design Patterns",
-    "Modular Architecture",
-    "Requirements Analysis"
-  ],
+
   "Environments": [
     "Git / GitHub",
     "VS Code",
