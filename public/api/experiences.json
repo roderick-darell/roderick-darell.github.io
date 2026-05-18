@@ -1,5 +1,26 @@
 [
   {
+    "start": "2026-05",
+    "end": "present",
+    "title": "Data Analyst (CDD)",
+    "company": "PRESTI LIFE",
+    "location": "Cysoing, France",
+    "icon": "fa-chart-pie",
+    "bullets": [
+      "Cadrage métier et structuration de la donnée : recueil des besoins auprès des responsables de secteur, définition des règles de gestion, conception d'un schéma analytique en étoile sur la base clients (~60 bénéficiaires).",
+      "Feature engineering adapté au secteur médico-social : ancienneté, intensité du plan d'aide, événements de santé, signalements terrain des auxiliaires de vie.",
+      "Mise en production d'un dashboard de pilotage Power BI à destination des responsables de secteur : visualisation des bénéficiaires à risque, classement par priorité, suivi du KPI de rétention mensuel.",
+      "Déploiement d'une preuve de concept du projet ChurnGuard adaptée à l'aide à domicile : prédiction des fins de prestation (décès, hospitalisation longue, EHPAD, désengagement), validation de l'impact métier avec les équipes terrain avant le go en production."
+    ],
+    "tags": [
+      "Data Analysis",
+      "Power BI",
+      "Machine Learning",
+      "Feature Engineering",
+      "POC → Production"
+    ]
+  },
+  {
     "start": "2025-09",
     "end": "present",
     "title": "Moniteur étudiant & tuteur en mathématiques",
@@ -7,25 +28,30 @@
     "location": "Lille, France",
     "icon": "fa-graduation-cap",
     "bullets": [
-      "Accueil, orientation et assistance aux étudiants (espaces & ressources numériques).",
-      "Rôle de relais : transmission des informations, remontée des besoins, contribution au bon fonctionnement du service.",
-      "Tutorat en mathématiques (L1) : algèbre, analyse, logique, méthodologie et résolution de problèmes."
+      "Accueil, orientation et assistance des usagers du Lilliad Learning Center sur les espaces et les ressources numériques de la bibliothèque universitaire.",
+      "Rôle de relais entre étudiants, personnel universitaire et équipe de moniteurs : transmission des informations, remontée des besoins, contribution au bon fonctionnement des services.",
+      "Tutorat en mathématiques (L1) : algèbre, analyse, logique, méthodologie de résolution de problèmes — vulgarisation de concepts techniques auprès d'un public débutant."
     ],
-    "tags": ["Pédagogie", "Rigueur", "Communication"]
+    "tags": ["Pédagogie", "Vulgarisation", "Communication"]
   },
   {
     "start": "2025-07",
     "end": "2026-01",
-    "title": "Assistant administratif & suivi des outils numériques",
+    "title": "Assistant administratif & contrôle des outils numériques",
     "company": "PRESTI LIFE",
-    "location": "Lille, France",
-    "icon": "fa-chart-line",
+    "location": "Cysoing, France",
+    "icon": "fa-clipboard-list",
     "bullets": [
-      "Supervision quotidienne des outils (site web + logiciel métier) : détection proactive des anomalies et réduction des incidents récurrents (~30%).",
-      "Identification des points de friction et formalisation structurée des besoins utilisateurs transmis aux développeurs.",
-      "Préparation paie, facturation, suivi de dossiers et organisation des plannings avec fiabilisation des délais."
+      "Supervision quotidienne des outils numériques (site web et logiciel métier) : détection proactive d'anomalies et formalisation structurée des besoins utilisateurs, conduisant à une réduction des incidents récurrents d'environ 30 %.",
+      "Rédaction d'un cahier des charges fonctionnel complet pour la refonte d'un logiciel métier : recueil des besoins auprès des utilisateurs finaux, formalisation des exigences techniques et des contraintes réglementaires, priorisation des correctifs.",
+      "Préparation de la paie, facturation, suivi des dossiers bénéficiaires et organisation des plannings, avec fiabilisation des délais et réduction des erreurs administratives."
     ],
-    "tags": ["Analyse", "Documentation", "Amélioration continue"]
+    "tags": [
+      "Analyse fonctionnelle",
+      "Cahier des charges",
+      "Documentation",
+      "Amélioration continue"
+    ]
   },
   {
     "start": "2024-03",
@@ -35,24 +61,24 @@
     "location": "Wasquehal, France",
     "icon": "fa-store",
     "bullets": [
-      "Mise en rayon, facing, contrôle des dates (DLC/DDM) et gestion des ruptures pour assurer la disponibilité.",
-      "Accueil et conseil client : écoute, orientation et résolution de problèmes en situation réelle.",
-      "Encaissement et procédures : rigueur, fiabilité, gestion de flux et respect des consignes."
+      "Mise en rayon, facing, contrôle des DLC/DDM et gestion des ruptures pour garantir la disponibilité produit en magasin.",
+      "Accueil et conseil client en situation réelle : écoute active, orientation et résolution de problèmes au quotidien.",
+      "Encaissement et application des procédures : rigueur, fiabilité, gestion des flux de clientèle, respect des consignes."
     ],
     "tags": ["Relation client", "Organisation", "Fiabilité"]
   },
   {
     "start": "2024-01",
     "end": "2025-02",
-    "title": "Secrétaire d’examen",
+    "title": "Secrétaire d'examen",
     "company": "Université de Lille",
     "location": "Lille, France",
     "icon": "fa-clipboard-check",
     "bullets": [
-      "Surveillance des examens : respect du cadre, gestion du temps et application des consignes.",
-      "Contrôle des identités, distribution/récupération des sujets et copies, traitement des incidents.",
-      "Communication claire et posture professionnelle dans un environnement sous pression."
+      "Surveillance d'examens universitaires : application du cadre réglementaire, gestion du temps et respect strict des consignes.",
+      "Contrôle des identités, distribution et récupération des sujets et copies, traitement des incidents en séance.",
+      "Communication claire et posture professionnelle dans un environnement sous pression et à forte responsabilité."
     ],
-    "tags": ["Rigueur", "Cadre", "Responsabilité"]
+    "tags": ["Rigueur", "Responsabilité", "Cadre réglementaire"]
   }
 ]

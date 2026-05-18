@@ -2,55 +2,22 @@
   "facebookAppId": "",
   "themeColor": "#2563eb",
   "person": {
-    "name": "Roderick-darell Tchinde",
-    "location": "Lille,France",
-    "tagline": "Étudiant en L3 Informatique–Mathématiques, passionné par la data science et l’analyse de données pour la prise de décisions stratégiques. Actuellement à la recherche d’un stage ou d’une alternance dès fin avril.",
-    "fullName": "TCHINDE SINGHE RODERICK DARELL Data Analyst",
+    "name": "Roderick-Darell Tchinde",
+    "location": "Villeneuve-d'Ascq, France",
+    "tagline": "Étudiant en Master Informatique  parcours IA à l'Université de Lille. Passionné par les projets data de bout en bout, du cadrage métier à la mise en production. À la recherche d'une alternance Data Scientist / Data Analyst pour la rentrée 2026.",
+    "fullName": "TCHINDE SINGHE Roderick-Darell – Data Scientist",
     "website": "https://roderick-darell.github.io/"
   },
   "about": {
-  "description": "Je suis étudiant en Informatique–Mathématiques, passionné par l’analyse et la valorisation des données. Je m’intéresse particulièrement au cycle de vie de la donnée, depuis sa collecte et son traitement jusqu’à l’extraction d’informations utiles permettant d’orienter la prise de décision.\n\nAu-delà de la maîtrise des outils techniques, je suis convaincu qu’une bonne analyse repose avant tout sur la compréhension des concepts et des structures sous-jacentes aux données étudiées. C’est cette approche qui guide ma manière d’aborder les problèmes et de concevoir des solutions.\n\nMa formation en Informatique et Mathématiques me permet de combiner rigueur analytique, modélisation et compétences techniques pour mieux comprendre et résoudre des problématiques complexes liées aux données.\n\nToujours curieux et motivé, je cherche constamment à développer mes compétences afin de transformer les données en informations pertinentes et exploitables."
-}
-,
+    "description": "Étudiant en Master Informatique — parcours IA à l'Université de Lille, après une licence Mathématiques–Informatique.\n\nCe qui me motive : construire des projets data de bout en bout, du cadrage métier à la mise en production. Mon projet ChurnGuard, déployé en conditions réelles chez PrestiLife, combine XGBoost et IA générative (Mistral + RAG) pour prédire et prévenir le départ de bénéficiaires.\n\nJe crois qu'une bonne analyse se joue largement en amont du modèle : dans la qualité de la donnée, la formalisation des règles métier et le dialogue avec les équipes terrain.\n\nÀ la recherche d'une alternance pour la rentrée 2026 (3 jours entreprise / 2 jours école)."
+  },
   "skills": {
-  "Programming Languages": [
-    "Python",
-    "Java",
-    "SQL",
-    "JavaScript",
-    "AMPL" ,
-    "c"
-
-  ],
-  "Data Analysis & Machine Learning": [
-    "Data Cleaning",
-    "power bi ",
-    "power apps ",
-    "Supervised Learning (KNN)",
-    "Excel",
-    "
-  ],
-  "Libraries & Tools": [
-    "Pandas",
-    "NumPy",
-    "Scikit-learn",
-    "Matplotlib",
-    "Orange Data Mining"
-  ],
-  "Mathematics & Optimization": [
-    "Linear Algebra",
-    "Statistics",
-    "Linear Programming"
-  ],
-
-  "Environments": [
-    "Git / GitHub",
-    "VS Code",
-    "Linux",
-    "Windows",
-    "Jupyter Notebooks",
-    "HTML / CSS"
-  ]
-}
-
+    "Programming Languages": ["Python", "SQL", "Java"],
+    "Machine Learning & Data Science": ["scikit-learn", "XGBoost", "Feature Engineering"],
+    "Generative AI & LLM": ["Mistral (Ollama)", "RAG", "Prompt Engineering"],
+    "Data Engineering": ["Pandas", "FastAPI", "Streamlit"],
+    "Data Visualisation & BI": ["Power BI", "Matplotlib", "Excel (VBA)"],
+    "Environnements & Outils": ["Git / GitHub", "Jupyter Notebooks", "Linux"],
+    "Méthodologie": ["Cahier des charges fonctionnel", "POC → Production", "Agile"]
+  }
 }

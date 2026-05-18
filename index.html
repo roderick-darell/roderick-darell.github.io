@@ -1,161 +1,165 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>{{TITLE}} | Portfolio</title>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}} | Portfolio Data Scientist</title>
 
-    <meta
-      name="keywords"
-      content="tchinde roderick darell, data science, data analyst, machine learning, python, pandas, scikit-learn, optimization, AMPL, java, portfolio, internship, apprenticeship"
-    />
-  </head>
+  <meta
+    name="description"
+    content="Portfolio de Roderick-Darell Tchinde, étudiant en Master IA à l'Université de Lille. Projets data science, machine learning et IA générative. À la recherche d'une alternance pour la rentrée 2026."
+  />
 
-  <body>
-    <header role="banner">
-      <nav class="container" role="navigation" aria-label="Main navigation">
-        <ul class="nav-links" role="list">
-          <li role="listitem"><a href="#about" aria-label="Go to About section">About</a></li>
-          <li role="listitem"><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
-          <li role="listitem"><a href="#experience" aria-label="Go to Experience section">Experience</a></li>
-          <li role="listitem"><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+  <meta
+    name="keywords"
+    content="Tchinde Roderick Darell, data scientist, data analyst, machine learning, python, XGBoost, RAG, IA générative, Master IA Lille, alternance 2026, portfolio"
+  />
 
-        </ul>
-      </nav>
-    </header>
+  <meta name="author" content="Roderick-Darell Tchinde" />
 
-    <main role="main">
-      <!-- HERO -->
-      <section id="home" class="hero" aria-labelledby="home-heading">
-        <div class="cinematic-background"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
-        <div class="dust-particles"></div>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{TITLE}} | Portfolio Data Scientist" />
+  <meta property="og:description" content="Étudiant Master IA à l'Université de Lille. Projets data science, ML et IA générative. À la recherche d'une alternance rentrée 2026." />
+  <meta property="og:image" content="/img/profile_picture.jpg" />
+  <meta property="og:url" content="https://roderick-darell.github.io/" />
 
-        <div class="container">
-          <div
-            class="profile-picture"
-            role="img"
-            aria-label="{{TITLE}} profile picture"
-          >
-            <img
-              src="/img/profile_picture.jpg"
-              alt="{{TITLE}} - Portrait"
-              width="200"
-              height="200"
-              draggable="false"
-              fetchpriority="high"
-              onerror="this.style.display='none'; this.parentElement.style.display='none';"
-            />
-          </div>
+  <link rel="icon" href="/img/favicon.ico" />
+</head>
 
-          <h1 id="home-heading" class="sr-only">{{HERO_H1}}</h1>
-          <p>{{HERO_TAGLINE}}</p>
+<body>
+<header role="banner">
+  <nav class="container" role="navigation" aria-label="Navigation principale">
+    <ul class="nav-links" role="list">
+      <li role="listitem"><a href="#about" aria-label="Aller à la section À propos">À propos</a></li>
+      <li role="listitem"><a href="#projects" aria-label="Aller à la section Projets">Projets</a></li>
+      <li role="listitem"><a href="#experience" aria-label="Aller à la section Expériences">Expériences</a></li>
+      <li role="listitem"><a href="#skills" aria-label="Aller à la section Compétences">Compétences</a></li>
+    </ul>
+  </nav>
+</header>
 
-          <div
-            class="hero-social-links"
-            role="list"
-            aria-label="Social media links"
-          >
-            {{SOCIAL_LINKS}}
-          </div>
+<main role="main">
+  <!-- HERO -->
+  <section id="home" class="hero" aria-labelledby="home-heading">
+    <div class="cinematic-background"></div>
+    <div class="dust-particles"></div>
+    <div class="dust-particles"></div>
+    <div class="dust-particles"></div>
+    <div class="dust-particles"></div>
+    <div class="dust-particles"></div>
 
-          <a href="#projects" class="cta-button" aria-label="View featured projects">
-            Featured Projects
-          </a>
-        </div>
-      </section>
+    <div class="container">
+      <div
+        class="profile-picture"
+        role="img"
+        aria-label="Photo de profil de {{TITLE}}"
+      >
+        <img
+          src="/img/profile_picture.jpg"
+          alt="{{TITLE}} - Portrait"
+          width="200"
+          height="200"
+          draggable="false"
+          fetchpriority="high"
+          onerror="this.style.display='none'; this.parentElement.style.display='none';"
+        />
+      </div>
 
-      <!-- ABOUT -->
-      <section id="about" class="section" aria-labelledby="about-heading">
-        <div class="container">
-          <h2 id="about-heading">About Me</h2>
+      <h1 id="home-heading" class="sr-only">{{HERO_H1}}</h1>
+      <p>{{HERO_TAGLINE}}</p>
 
-          <div
-            class="about-description-container"
-            style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto"
-          >
-            {{ABOUT_DESCRIPTION}}
-          </div>
+      <div
+        class="hero-social-links"
+        role="list"
+        aria-label="Liens vers les réseaux sociaux"
+      >
+        {{SOCIAL_LINKS}}
+      </div>
 
-          <div class="about-subsections">
-            <div class="about-subsection">
-              <h3>Skills & Expertise</h3>
-              <div class="skills" role="list" aria-label="Skills">
-                
-              </div>
-            </div>
-
-            
-          </div>
-        </div>
-      </section>
-      <!-- EXPERIENCE (nouvelle section) -->
-<section id="experience" class="section" aria-labelledby="experience-heading">
-  <div class="container">
-    <h2 id="experience-heading">Professional Experience</h2>
-
-    <p style="text-align:center; max-width: 820px; margin: 0 auto 20px;">
-      Real-world experiences focused on data, software engineering, and problem solving.
-    </p>
-
-    <div class="experience-grid" role="list" aria-label="Experience items">
-      {{EXPERIENCES}}
+      <a href="#projects" class="cta-button" aria-label="Voir les projets phares">
+        Voir mes projets
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <h2 id="about-heading">À propos</h2>
 
-      <!-- SKILLS (section dédiée, ancre menu) -->
-      <section id="skills" class="section" aria-labelledby="skills-heading">
-        <div class="container">
-          <h2 id="skills-heading">Skills (Data & Engineering)</h2>
-
-          <p style="text-align:center; max-width: 820px; margin: 0 auto 20px;">
-            Technologies and methods I use for data analysis, machine learning,
-            optimization and software engineering.
-          </p>
-
-          <div class="skills" role="list" aria-label="Key skills">
-            {{SKILLS}}
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="section" aria-labelledby="projects-heading">
-        <div class="container">
-          <h2 id="projects-heading">Featured Projects:</h2>
-          <div
-            class="projects-grid"
-            role="list"
-            aria-label="Project cards"
-          >
-            {{PROJECTS}}
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Project Modal -->
-    <div
-      id="project-modal"
-      class="modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-      aria-describedby="modal-description"
-    >
-      <div id="modal-content" class="modal-content"></div>
+      <div
+        class="about-description-container"
+        style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;"
+      >
+        {{ABOUT_DESCRIPTION}}
+      </div>
     </div>
+  </section>
 
-    <!-- JavaScript -->
-    <script type="module" src="/src/js/home.js"></script>
-  </body>
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading">Projets phares</h2>
+
+      <p style="text-align: center; max-width: 820px; margin: 0 auto 30px;">
+        Une sélection de projets data science, machine learning et IA générative — du cadrage métier jusqu'à la mise en production.
+      </p>
+
+      <div
+        class="projects-grid"
+        role="list"
+        aria-label="Cartes de projets"
+      >
+        {{PROJECTS}}
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" aria-labelledby="experience-heading">
+    <div class="container">
+      <h2 id="experience-heading">Expériences professionnelles</h2>
+
+      <p style="text-align: center; max-width: 820px; margin: 0 auto 30px;">
+        Expériences concrètes en data, accompagnement utilisateurs et environnement professionnel.
+      </p>
+
+      <div class="experience-grid" role="list" aria-label="Liste des expériences">
+        {{EXPERIENCES}}
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 id="skills-heading">Compétences</h2>
+
+      <p style="text-align: center; max-width: 820px; margin: 0 auto 30px;">
+        Les technologies et méthodes que j'utilise au quotidien pour analyser, modéliser et industrialiser des projets data.
+      </p>
+
+      <div class="skills" role="list" aria-label="Liste des compétences">
+        {{SKILLS}}
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Project Modal -->
+<div
+  id="project-modal"
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modal-title"
+  aria-describedby="modal-description"
+>
+  <div id="modal-content" class="modal-content"></div>
+</div>
+
+<!-- JavaScript -->
+<script type="module" src="/src/js/home.js"></script>
+</body>
 </html>

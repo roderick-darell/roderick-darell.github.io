@@ -1,14 +1,103 @@
 [
+
+
+
+
+
+
+
+
+
+  {
+
+    "type": "data",
+
+    "date": "2026",
+
+    "title": "ChurnGuard AI",
+
+    "icon": "img/icon/ai.ico",
+
+    "headline": "Plateforme ML + IA générative déployée en production",
+
+    "description": "Plateforme end-to-end de prédiction et prévention du churn client, combinant XGBoost et IA générative (Mistral + RAG) pour générer automatiquement des messages de rétention personnalisés. Version showcase disponible sur GitHub avec données factices ; version réelle déployée en conditions opérationnelles chez PrestiLife (~60 bénéficiaires).",
+
+    "details": "Projet IA complet, du cadrage métier à la mise en production. [...etc, le reste de ta description...]",
+
+    "snapshot": "img/snapshot/churnguard.webp",
+
+    "tags": ["Python", "XGBoost", "Mistral", "RAG", "FastAPI", "Streamlit", "Optuna", "SHAP", "GenAI", "MLOps"],
+
+    "links": [
+
+      { "text": "View Code (version showcase)", "url": "https://github.com/roderick-darell/ChurnGuard-AI" },
+
+      { "text": "Mise en production : confidentielle PrestiLife", "url": "#" }
+
+    ]
+
+  }   ,
+  {
+    "type": "data",
+    "date": "2024",
+    "title": "Mushroom KNN Classifier",
+    "icon": "img/icon/ml.ico",
+    "headline": "Classification supervisée — 97 % de précision",
+    "description": "Analyse exploratoire d'un dataset de ~5 000 champignons décrits par 65 caractéristiques, puis développement d'un algorithme KNN pour prédire la nature comestible ou vénéneuse de chaque échantillon, avec une fiabilité de 97 % sur le jeu de test.",
+    "details": "Projet de modélisation prédictive complet, mené depuis l'exploration des données jusqu'au programme final. Étape 1 — Analyse exploratoire : étude des 65 features avec Orange Data Mining, détection des variables discriminantes, traitement des valeurs manquantes et des classes déséquilibrées. Étape 2 — Modélisation : implémentation manuelle de l'algorithme KNN en Python, recherche du k optimal par validation croisée, choix de la métrique de distance adaptée aux variables catégorielles. Étape 3 — Évaluation : matrice de confusion, précision, rappel, et analyse des cas d'erreur (un faux négatif sur un champignon vénéneux étant critique, l'évaluation a été pondérée pour minimiser ce risque). Étape 4 — Livrable : programme Python final prenant en entrée les caractéristiques d'un champignon et retournant la prédiction avec un indice de confiance.",
+    "snapshot": "img/snapshot/mushroom-knn.webp",
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "KNN",
+      "Classification supervisée",
+      "Feature Engineering",
+      "Orange Data Mining",
+      "scikit-learn"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/projet_modelisation_prediction_knn.git"
+      }
+    ]
+  },
+
+  {
+    "type": "data",
+    "date": "2024",
+    "title": "Optimisation AMPL — Maximisation de profit",
+    "icon": "img/icon/opt.ico",
+    "headline": "Modélisation linéaire d'une chaîne de production alimentaire",
+    "description": "Modélisation d'un programme linéaire complet sous AMPL pour planifier la production de plats d'une entreprise agroalimentaire : intégration des contraintes de ressources, de recettes et de capacité de production, avec pour objectif la maximisation du profit final.",
+    "details": "Projet de recherche opérationnelle appliquée. Formalisation du problème métier : identification des variables de décision (quantités produites par plat), des contraintes (stocks de matières premières, temps machine, recettes, capacité logistique), et de la fonction objectif (profit). Modélisation AMPL : écriture du modèle (sets, params, vars, subject to, maximize), définition des données dans un fichier séparé pour permettre le rejeu sur d'autres scénarios. Résolution et analyse : exécution via un solveur LP, analyse de sensibilité sur les contraintes critiques pour identifier les goulots d'étranglement. Ce projet m'a appris à traduire un problème métier flou en une formulation mathématique rigoureuse — une compétence qui m'a beaucoup servi ensuite sur ChurnGuard.",
+    "snapshot": "img/snapshot/ampl-optimization.webp",
+    "tags": [
+      "AMPL",
+      "Programmation linéaire",
+      "Recherche opérationnelle",
+      "Optimisation",
+      "Supply Chain",
+      "Modélisation mathématique"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/Modelisation_lineaire_maximization_de-profit.git"
+      }
+    ]
+  },
+
   {
     "type": "dev",
     "date": "2025",
     "title": "Vélos en libre-service",
     "icon": "img/icon/bike.ico",
-    "headline": "Gestion complète d’un système de vélos (Java)",
-    "description": "Application Java de gestion d’un service de vélos : stock, disponibilité, contraintes, cycle de vie, supervision du centre de contrôle, vélos volés, réparateurs, etc.",
-    "details": "Projet Java orienté conception : gestion du stock et de la disponibilité, application de contraintes métier, supervision du cycle normal et des incidents (vol, maintenance, réparations), avec une architecture structurée basée sur des design patterns.",
+    "headline": "Système complet de gestion en Java",
+    "description": "Application Java de gestion d'un service de vélos en libre-service : gestion du stock, suivi de la disponibilité en temps réel, supervision du centre de contrôle, traitement des vélos volés ou en panne, coordination des réparateurs.",
+    "details": "Projet de conception orientée objet à dimension système. L'architecture repose sur plusieurs design patterns appliqués de manière justifiée : Observer pour la mise à jour en temps réel des stations, Strategy pour les différentes politiques d'attribution, Singleton pour le centre de contrôle. La modélisation gère le cycle de vie complet d'un vélo (disponible, loué, en transit, en panne, en réparation, volé) ainsi que les transitions entre ces états selon les événements métier. Ce projet m'a fait travailler la rigueur de modélisation et la séparation des responsabilités, des compétences directement transposables à la structuration d'un projet data.",
     "snapshot": "img/snapshot/bike-sharing.webp",
-    "tags": ["Java", "OOP", "Design Patterns", "Gestion de stock", "Contraintes métier"],
+    "tags": ["Java", "POO", "Design Patterns", "Architecture logicielle", "Modélisation système"],
     "links": [
       { "text": "View Code", "url": "https://github.com/roderick-darell/projet_gestion_velo.git" }
     ]
@@ -19,33 +108,33 @@
     "date": "2025",
     "title": "Arès Demeter",
     "icon": "img/icon/game.ico",
-    "headline": "Modélisation complète du jeu (Java)",
-    "description": "Modélisation Java du jeu Arès Demeter : affrontements multi-joueurs et lancement de parties aléatoires.",
-    "details": "Implémentation orientée objet d’un jeu de plateau/stratégie : gestion des règles, états de partie, joueurs multiples, et génération de partie aléatoire.",
+    "headline": "Modélisation d'un jeu de stratégie multijoueur",
+    "description": "Implémentation Java complète du jeu de plateau Arès Demeter : gestion des règles de jeu, des affrontements entre plusieurs joueurs, des états de partie, et système de lancement de parties aléatoires pour tester la robustesse du moteur.",
+    "details": "Projet de modélisation orientée objet appliquée au game design. Conception de la hiérarchie de classes représentant les joueurs, le plateau, les pions et les actions possibles. Implémentation du moteur de règles avec validation systématique des coups joués. Gestion des états successifs d'une partie (initialisation, tours de jeu, fin de partie, désignation du vainqueur) via une machine à états. Module de partie aléatoire permettant de jouer automatiquement des milliers de parties pour détecter les bugs et tester l'équilibre du jeu.",
     "snapshot": "img/snapshot/ares-demeter.webp",
-    "tags": ["Java", "Game Design", "Modélisation", "Multijoueur"],
+    "tags": ["Java", "POO", "Game Design", "Machine à états", "Tests"],
     "links": [
       { "text": "View Code", "url": "https://github.com/roderick-darell/projet_Ares_Demeter.git" }
     ]
   },
 
   {
-    "type": "dev",
+    "type": "pro",
     "date": "2024",
-    "title": "Cahier des charges (confidentiel)",
+    "title": "Cahier des charges fonctionnel",
     "icon": "img/icon/lock.ico",
-    "headline": "Spécifications fonctionnelles & correction d’outil métier",
-    "description": "Rédaction d’un cahier des charges complet pour corriger des problèmes métier et structurels d’un logiciel (document non publiable).",
-    "details": "Dans le cadre d’une mission de contrôle d’outil numérique, rédaction d’un cahier des charges détaillé à destination des développeurs : analyse des dysfonctionnements, objectifs de refonte/correctifs, exigences, contraintes, priorisation. Document confidentiel : pas de code ni lien public.",
+    "headline": "Spécification d'une refonte de logiciel métier (confidentiel)",
+    "description": "Rédaction d'un cahier des charges fonctionnel complet pour la refonte d'un logiciel métier utilisé en interne chez PrestiLife. Document destiné aux développeurs, détaillant les dysfonctionnements actuels, les objectifs de la refonte et les exigences fonctionnelles à respecter.",
+    "details": "Mission menée en parallèle de mon poste d'assistant administratif chez PrestiLife. Démarche : recueil des besoins auprès des utilisateurs finaux (auxiliaires de vie, responsables de secteur, administratifs), observation terrain des usages réels du logiciel, identification des points de friction et des anomalies récurrentes. Rédaction : structuration du document en sections (contexte, état de l'art, objectifs, exigences fonctionnelles, contraintes techniques, contraintes réglementaires, critères d'acceptation, priorisation MoSCoW). Cette expérience m'a appris la rigueur de la formalisation et le dialogue avec les équipes non-techniques — compétences que je réinvestis aujourd'hui dans tous mes projets data, à commencer par ChurnGuard. Document confidentiel : pas de code ni de lien public.",
     "snapshot": "img/snapshot/confidential.webp",
-    "tags": ["Rédaction", "Cahier des charges", "Analyse métier", "Confidentiel"],
-    "links": [
-  {
-    "text": "Confidential project – details available on request",
-    "url": "#"
-  }
-]
-
+    "tags": [
+      "Cahier des charges",
+      "Analyse fonctionnelle",
+      "Recueil de besoins",
+      "Spécifications",
+      "Confidentiel"
+    ],
+    "links": [{ "text": "Confidential project – details available on request", "url": "#" }]
   },
 
   {
@@ -53,44 +142,17 @@
     "date": "2024",
     "title": "Paris 2024 Football Simulator",
     "icon": "img/icon/football.ico",
-    "headline": "Simulation du tournoi jusqu’à la victoire finale",
-    "description": "Site web HTML/CSS/JavaScript simulant les matchs de football des JO Paris 2024 jusqu’à la victoire finale.",
-    "details": "Application web front : simulation de matchs, enchaînement du bracket/tournoi, affichage des résultats, progression jusqu’au vainqueur final.",
+    "headline": "Simulation du tournoi olympique de football",
+    "description": "Site web interactif (HTML/CSS/JavaScript) simulant l'intégralité du tournoi de football des Jeux Olympiques Paris 2024, depuis la phase de poules jusqu'à la finale, avec affichage dynamique des résultats et progression jusqu'au vainqueur final.",
+    "details": "Application front-end développée en vanilla JavaScript. Modélisation du bracket complet du tournoi olympique avec les vraies équipes engagées. Logique de simulation : tirage aléatoire pondéré tenant compte d'un score de force pour chaque équipe. Interface utilisateur permettant de lancer une simulation complète et de naviguer entre les différents tours (phase de groupes, quarts, demis, finale). Affichage progressif des résultats avec mise à jour dynamique du tableau du tournoi. Projet réalisé en pur HTML/CSS/JS, sans framework, pour bien maîtriser les fondamentaux du web.",
     "snapshot": "img/snapshot/paris2024-football.webp",
-    "tags": ["HTML", "CSS", "JavaScript", "Simulation", "Web"],
+    "tags": ["HTML", "CSS", "JavaScript", "Front-end", "Simulation", "Vanilla JS"],
     "links": [
-      { "text": "View Code", "url": "https://github.com/roderick-darell/Modelisation_web_jeu_olympique.git" },
-      { "text": "Live Demo", "url": "A_COMPLETER_URL_DEMO" }
-    ]
-  },
-
-  {
-    "type": "dev",
-    "date": "2024",
-    "title": "Optimisation AMPL",
-    "icon": "img/icon/opt.ico",
-    "headline": "Modélisation linéaire : production & logistique",
-    "description": "Modélisation AMPL des contraintes d’une entreprise de plats (recettes, production, logistique) avec objectif de maximisation du profit.",
-    "details": "Formulation d’un programme linéaire (variables, contraintes, objectifs) : capacité, ressources, logistique, recettes, etc. Résolution orientée maximisation des profits.",
-    "snapshot": "img/snapshot/ampl-optimization.webp",
-    "tags": ["AMPL", "Optimisation", "Programmation linéaire", "Supply Chain"],
-    "links": [
-      { "text": "View Code", "url": "https://github.com/roderick-darell/Modelisation_lineaire_maximization_de-profit.git" }
-    ]
-  },
-
-  {
-    "type": "dev",
-    "date": "2024",
-    "title": "Mushroom KNN",
-    "icon": "img/icon/ml.ico",
-    "headline": "Prédiction comestible vs vénéneux",
-    "description": "Analyse d’un dataset ~5000 champignons + algorithme KNN pour prédire comestible/vénéneux, avec programme Python final.",
-    "details": "Collecte/analyse des données (Orange), préparation, puis implémentation KNN et programme Python retournant la prédiction comestible/vénéneux.",
-    "snapshot": "img/snapshot/mushroom-knn.webp",
-    "tags": ["Python", "Machine Learning", "KNN", "Data Analysis", "Orange"],
-    "links": [
-      { "text": "View Code", "url": "https://github.com/roderick-darell/projet_modelisation_prediction_knn.git" }
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/Modelisation_web_jeu_olympique.git"
+      },
+      { "text": "Live Demo", "url": "XX" }
     ]
   }
 ]
