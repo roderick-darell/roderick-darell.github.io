@@ -1,24 +1,30 @@
 [
   {
-    "start": "2026-05",
-    "end": "present",
+    "start": "2026-07",
+    "end": "2026-08",
+    "title": "Conseiller acceptation bancaire (auxiliaire de vacances)",
+    "company": "Monabanq (groupe Cofidis)",
+    "location": "Villeneuve-d'Ascq, France",
+    "icon": "fa-landmark",
+    "bullets": [
+      "Deux semaines d'observation de poste au sein du service risque client : compréhension de la gestion des bases dédiées à la fraude et des mécanismes de lutte contre la fraude bancaire.",
+      "Contrôle de la cohérence et de l'exhaustivité des dossiers clients avant intégration en base : vérification du respect des préconditions d'éligibilité et de la conformité des dossiers."
+    ],
+    "tags": ["Gestion des risques", "Conformité", "Contrôle qualité"]
+  },
+  {
+    "start": "2026-04",
+    "end": "2026-06",
     "title": "Data Analyst (stage)",
     "company": "PRESTI LIFE",
     "location": "Cysoing, France",
     "icon": "fa-chart-pie",
     "bullets": [
-      "Cadrage métier et structuration de la donnée : recueil des besoins auprès des responsables de secteur, définition des règles de gestion, conception d'un schéma analytique en étoile sur la base clients (~60 bénéficiaires).",
-      "Feature engineering adapté au secteur médico-social : ancienneté, intensité du plan d'aide, événements de santé, signalements terrain des auxiliaires de vie.",
-      "Mise en production d'un dashboard de pilotage Power BI à destination des responsables de secteur : visualisation des bénéficiaires à risque, classement par priorité, suivi du KPI de rétention mensuel.",
-      "Déploiement d'une preuve de concept du projet ChurnGuard adaptée à l'aide à domicile : prédiction des fins de prestation (décès, hospitalisation longue, EHPAD, désengagement), validation de l'impact métier avec les équipes terrain avant le go en production."
+      "Cadrage des besoins avec les équipes opérationnelles : traduction de leurs enjeux métier en indicateurs concrets, puis extraction, transformation et analyse de données issues de la base bénéficiaires : conception d'un pipeline ETL automatisé sur Google Cloud Platform (BigQuery), versionné sur GitHub.",
+      "Conception de tableaux de bord et reportings sous Power BI, en produisant des indicateurs pertinents pour accompagner les équipes métier dans leurs décisions.",
+      "Mise à jour et diffusion mensuelle des KPI, en garantissant la qualité et la fiabilité des données utilisées."
     ],
-    "tags": [
-      "Data Analysis",
-      "Power BI",
-      "Machine Learning",
-      "Feature Engineering",
-      "POC → Production"
-    ]
+    "tags": ["Data Analysis", "Power BI", "ETL", "Google Cloud Platform", "GitHub"]
   },
   {
     "start": "2025-09",
