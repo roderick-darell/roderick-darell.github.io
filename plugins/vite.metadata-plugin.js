@@ -142,7 +142,7 @@ html = html.replace(/{{SKILLS}}/g, skillsHTML);
         html = html.replace(/{{SKILLS}}/g, skillsHTML);
 
         // Generate companies HTML
-        const companiesHTML = metadata.companies
+        const companiesHTML = (metadata.companies || [])
           .map(
             (company) =>
               `<a href="${company.url}" target="_blank" class="company-tag" role="listitem" rel="noopener noreferrer" aria-label="${company.name} company">${company.name}</a>`

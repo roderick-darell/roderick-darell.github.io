@@ -619,8 +619,30 @@ footer {
       }
     }
 
+    // Data projects - Blue
+    &.project-type-data {
+      background: @type-data-color;
+      box-shadow: 0 2px 8px fade(@type-data-color, 30%);
+
+      &:hover {
+        transform: scale(1.15) rotate(5deg);
+        box-shadow: 0 6px 20px fade(@type-data-color, 50%);
+      }
+    }
+
+    // Professional missions - Slate
+    &.project-type-pro {
+      background: @type-pro-color;
+      box-shadow: 0 2px 8px fade(@type-pro-color, 30%);
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px fade(@type-pro-color, 40%);
+      }
+    }
+
     // Default fallback
-    &:not(.project-type-dev):not(.project-type-film):not(.project-type-music):not(.project-type-community) {
+    &:not(.project-type-data):not(.project-type-pro):not(.project-type-dev):not(.project-type-film):not(.project-type-music):not(.project-type-community) {
       background: @accent-color;
       box-shadow: 0 2px 8px rgba(194, 24, 91, 0.3);
 
@@ -1194,4 +1216,93 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+// ------------------------------------------------------------
+// Étiquettes de catégorie (Projet Data / Autre projet) et filtres
+// ------------------------------------------------------------
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: -0.25rem 0 0.6rem;
+}
+
+.project-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+
+.project-badge-data {
+  background: fade(@type-data-color, 12%);
+  color: darken(@type-data-color, 8%);
+  border-color: fade(@type-data-color, 35%);
+}
+
+.project-badge-autre {
+  background: fade(@type-pro-color, 12%);
+  color: darken(@type-pro-color, 12%);
+  border-color: fade(@type-pro-color, 35%);
+}
+
+.project-badge-status {
+  background: fade(#f59e0b, 14%);
+  color: #92400e;
+  border-color: fade(#f59e0b, 40%);
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 auto 1.5rem;
+}
+
+// Les boutons radio restent dans la page (accessibles au clavier) mais invisibles
+.project-filter-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.project-filter {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.85);
+  color: #1f2937;
+  cursor: pointer;
+  user-select: none;
+  .transition(all, 0.2s, ease);
+
+  &:hover {
+    border-color: @type-data-color;
+  }
+}
+
+.project-filter-input:checked + .project-filter {
+  background: @type-data-color;
+  border-color: @type-data-color;
+  color: @white;
+}
+
+.project-filter-input:focus-visible + .project-filter {
+  outline: 2px solid @type-data-color;
+  outline-offset: 2px;
+}
+
+// Le filtrage lui-même : on masque les cartes qui ne correspondent pas
+#projects:has(#project-filter-data:checked) .project-card:not([data-category='data']),
+#projects:has(#project-filter-autre:checked) .project-card:not([data-category='autre']) {
+  display: none;
 }

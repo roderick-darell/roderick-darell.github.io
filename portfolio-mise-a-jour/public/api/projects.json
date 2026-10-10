@@ -1,0 +1,245 @@
+[
+  {
+    "type": "data",
+    "status": "En cours",
+    "date": "2026",
+    "title": "AML Sentinel",
+    "icon": "YYYY",
+    "headline": "Réduire les fausses alertes anti-blanchiment grâce à l'analyse de graphes",
+    "description": "Problématique : les banques détectent le blanchiment avec des règles fixes qui génèrent une majorité de fausses alertes et regardent les opérations une par une, alors que les vrais schémas (comptes mules, circuits en boucle) ne se voient que dans le réseau des transactions. Peut-on alerter moins sans laisser passer plus de blanchiment ?",
+    "details": "Le constat. Chaque banque doit surveiller les opérations de ses clients et signaler les soupçons de blanchiment à Tracfin. Cette surveillance repose surtout sur des règles fixes (seuils de montant, pays sensibles, fractionnement), qui produisent beaucoup d'alertes dont une large majorité de faux positifs, et qui analysent chaque opération isolément. Or les schémas de blanchiment les plus courants (fan-in, fan-out, cycles, comptes de transit) n'apparaissent qu'en observant le réseau des comptes sur plusieurs jours.\n\nLa question. Peut-on réduire le nombre d'alertes à traiter, à niveau de détection égal, en combinant règles métier, analyse de graphe et apprentissage automatique ? Et peut-on scorer chaque transaction au moment où elle arrive ?\n\nLa démarche. Phase 1 (batch) : 5 millions de transactions IBM AML découpées par jour, entrepôt PostgreSQL modélisé et testé avec dbt, orchestration Airflow, règles métier en SQL comme référence, graphe des comptes dans Neo4j (PageRank, cycles, contreparties), modèle LightGBM évalué sur un découpage temporel, chaque alerte expliquée par SHAP, outil d'investigation Streamlit.\n\nPhase 2 (temps réel) : rejeu des transactions dans Kafka, features en ligne dans Redis, API de scoring FastAPI avec latence mesurée.\n\nPourquoi ce sujet. J'ai travaillé en conformité bancaire chez Monabanq : ce projet aborde le même problème du côté des données.\n\nStatut : projet en cours, résultats publiés au fur et à mesure dans le journal de bord du dépôt.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Data Engineering",
+      "Data Science",
+      "Python",
+      "SQL",
+      "dbt",
+      "Airflow",
+      "PostgreSQL",
+      "Neo4j",
+      "LightGBM",
+      "SHAP",
+      "Kafka",
+      "FastAPI",
+      "Streamlit",
+      "Docker"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "XX"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "status": "En cours",
+    "date": "2026",
+    "title": "Health Fraud Radar",
+    "icon": "YYYY",
+    "headline": "Repérer les facturations atypiques des professionnels de santé",
+    "description": "Problématique : en 2025, l'Assurance maladie a stoppé 723 M€ de fraudes, environ un tiers de la fraude estimée, et les professionnels de santé en concentrent 73 %. Avec la télétransmission et le tiers payant, le patient ne voit plus ce qui est facturé en son nom. Peut-on repérer les comportements de facturation atypiques à partir des seules données ?",
+    "details": "Le constat. En 2025, l'Assurance maladie a détecté et stoppé 723 millions d'euros de fraudes, soit environ un tiers de la fraude réelle estimée à 2 milliards. Les professionnels de santé libéraux, ou des escrocs se faisant passer pour tels, concentrent 73 % du préjudice pour 28 % des dossiers. Le patient, longtemps témoin naturel de ce qui était facturé en son nom, a quitté la scène avec la télétransmission et le tiers payant : la surveillance doit désormais reposer sur les données.\n\nLa question. À partir des seules données de facturation et de prescription, peut-on repérer les professionnels dont le comportement justifie un contrôle et prioriser ces contrôles ? Et une méthode apprise là où les données sont publiques peut-elle être transposée aux données ouvertes françaises ?\n\nLa démarche. Phase 1 (États-Unis) : données Medicare publiques par médecin (CMS Part B et Part D), étiquetées par la liste d'exclusion de l'OIG (LEIE) ; entrepôt DuckDB et dbt, indicateurs de contrôle par rapport aux pairs, réseau industrie / médecins dans Neo4j, modèle LightGBM évalué sur le rappel dans le top 1 %, explications SHAP, outil de priorisation Streamlit.\n\nPhase 2 (France) : transposition aux données ouvertes de l'Assurance maladie (Open DAMIR, Open MEDIC) et à Transparence Santé, détection d'anomalies non supervisée par spécialité et territoire.\n\nPrécautions : un score d'atypie n'est pas une accusation, aucun professionnel n'est désigné nommément.\n\nStatut : projet en cours, résultats publiés au fur et à mesure dans le journal de bord du dépôt.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Data Engineering",
+      "Data Science",
+      "Python",
+      "SQL",
+      "DuckDB",
+      "dbt",
+      "Airflow",
+      "Neo4j",
+      "LightGBM",
+      "Isolation Forest",
+      "SHAP",
+      "Streamlit",
+      "Open Data"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "XX"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "date": "2026",
+    "title": "ChurnGuard AI",
+    "icon": "YYYY",
+    "headline": "Plateforme ML + IA générative déployée en production",
+    "description": "Plateforme end-to-end de prédiction et prévention du churn client, combinant XGBoost et IA générative (Mistral + RAG) pour générer automatiquement des messages de rétention personnalisés. Version showcase disponible sur GitHub avec données factices ; version réelle déployée en conditions opérationnelles chez PrestiLife (~60 bénéficiaires).",
+    "details": "Projet IA complet, du cadrage métier à la mise en production. [...etc, le reste de ta description...]",
+    "snapshot": "YYYY",
+    "tags": [
+      "Python",
+      "XGBoost",
+      "Mistral",
+      "RAG",
+      "FastAPI",
+      "Streamlit",
+      "Optuna",
+      "SHAP",
+      "GenAI",
+      "MLOps"
+    ],
+    "links": [
+      {
+        "text": "View Code (version showcase)",
+        "url": "https://github.com/roderick-darell/ChurnGuard-AI"
+      },
+      {
+        "text": "Mise en production : confidentielle PrestiLife",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "date": "2024",
+    "title": "Mushroom KNN Classifier",
+    "icon": "YYYY",
+    "headline": "Classification supervisée — 97 % de précision",
+    "description": "Analyse exploratoire d'un dataset de ~5 000 champignons décrits par 65 caractéristiques, puis développement d'un algorithme KNN pour prédire la nature comestible ou vénéneuse de chaque échantillon, avec une fiabilité de 97 % sur le jeu de test.",
+    "details": "Projet de modélisation prédictive complet, mené depuis l'exploration des données jusqu'au programme final. Étape 1 — Analyse exploratoire : étude des 65 features avec Orange Data Mining, détection des variables discriminantes, traitement des valeurs manquantes et des classes déséquilibrées. Étape 2 — Modélisation : implémentation manuelle de l'algorithme KNN en Python, recherche du k optimal par validation croisée, choix de la métrique de distance adaptée aux variables catégorielles. Étape 3 — Évaluation : matrice de confusion, précision, rappel, et analyse des cas d'erreur (un faux négatif sur un champignon vénéneux étant critique, l'évaluation a été pondérée pour minimiser ce risque). Étape 4 — Livrable : programme Python final prenant en entrée les caractéristiques d'un champignon et retournant la prédiction avec un indice de confiance.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "KNN",
+      "Classification supervisée",
+      "Feature Engineering",
+      "Orange Data Mining",
+      "scikit-learn"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/projet_modelisation_prediction_knn.git"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "date": "2024",
+    "title": "Optimisation AMPL — Maximisation de profit",
+    "icon": "YYYY",
+    "headline": "Modélisation linéaire d'une chaîne de production alimentaire",
+    "description": "Modélisation d'un programme linéaire complet sous AMPL pour planifier la production de plats d'une entreprise agroalimentaire : intégration des contraintes de ressources, de recettes et de capacité de production, avec pour objectif la maximisation du profit final.",
+    "details": "Projet de recherche opérationnelle appliquée. Formalisation du problème métier : identification des variables de décision (quantités produites par plat), des contraintes (stocks de matières premières, temps machine, recettes, capacité logistique), et de la fonction objectif (profit). Modélisation AMPL : écriture du modèle (sets, params, vars, subject to, maximize), définition des données dans un fichier séparé pour permettre le rejeu sur d'autres scénarios. Résolution et analyse : exécution via un solveur LP, analyse de sensibilité sur les contraintes critiques pour identifier les goulots d'étranglement. Ce projet m'a appris à traduire un problème métier flou en une formulation mathématique rigoureuse — une compétence qui m'a beaucoup servi ensuite sur ChurnGuard.",
+    "snapshot": "YYYY",
+    "tags": [
+      "AMPL",
+      "Programmation linéaire",
+      "Recherche opérationnelle",
+      "Optimisation",
+      "Supply Chain",
+      "Modélisation mathématique"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/Modelisation_lineaire_maximization_de-profit.git"
+      }
+    ]
+  },
+  {
+    "type": "dev",
+    "date": "2025",
+    "title": "Vélos en libre-service",
+    "icon": "YYYY",
+    "headline": "Système complet de gestion en Java",
+    "description": "Application Java de gestion d'un service de vélos en libre-service : gestion du stock, suivi de la disponibilité en temps réel, supervision du centre de contrôle, traitement des vélos volés ou en panne, coordination des réparateurs.",
+    "details": "Projet de conception orientée objet à dimension système. L'architecture repose sur plusieurs design patterns appliqués de manière justifiée : Observer pour la mise à jour en temps réel des stations, Strategy pour les différentes politiques d'attribution, Singleton pour le centre de contrôle. La modélisation gère le cycle de vie complet d'un vélo (disponible, loué, en transit, en panne, en réparation, volé) ainsi que les transitions entre ces états selon les événements métier. Ce projet m'a fait travailler la rigueur de modélisation et la séparation des responsabilités, des compétences directement transposables à la structuration d'un projet data.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Java",
+      "POO",
+      "Design Patterns",
+      "Architecture logicielle",
+      "Modélisation système"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/projet_gestion_velo.git"
+      }
+    ]
+  },
+  {
+    "type": "dev",
+    "date": "2025",
+    "title": "Arès Demeter",
+    "icon": "YYYY",
+    "headline": "Modélisation d'un jeu de stratégie multijoueur",
+    "description": "Implémentation Java complète du jeu de plateau Arès Demeter : gestion des règles de jeu, des affrontements entre plusieurs joueurs, des états de partie, et système de lancement de parties aléatoires pour tester la robustesse du moteur.",
+    "details": "Projet de modélisation orientée objet appliquée au game design. Conception de la hiérarchie de classes représentant les joueurs, le plateau, les pions et les actions possibles. Implémentation du moteur de règles avec validation systématique des coups joués. Gestion des états successifs d'une partie (initialisation, tours de jeu, fin de partie, désignation du vainqueur) via une machine à états. Module de partie aléatoire permettant de jouer automatiquement des milliers de parties pour détecter les bugs et tester l'équilibre du jeu.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Java",
+      "POO",
+      "Game Design",
+      "Machine à états",
+      "Tests"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/projet_Ares_Demeter.git"
+      }
+    ]
+  },
+  {
+    "type": "pro",
+    "date": "2024",
+    "title": "Cahier des charges fonctionnel",
+    "icon": "YYYY",
+    "headline": "Spécification d'une refonte de logiciel métier (confidentiel)",
+    "description": "Rédaction d'un cahier des charges fonctionnel complet pour la refonte d'un logiciel métier utilisé en interne chez PrestiLife. Document destiné aux développeurs, détaillant les dysfonctionnements actuels, les objectifs de la refonte et les exigences fonctionnelles à respecter.",
+    "details": "Mission menée en parallèle de mon poste d'assistant administratif chez PrestiLife. Démarche : recueil des besoins auprès des utilisateurs finaux (auxiliaires de vie, responsables de secteur, administratifs), observation terrain des usages réels du logiciel, identification des points de friction et des anomalies récurrentes. Rédaction : structuration du document en sections (contexte, état de l'art, objectifs, exigences fonctionnelles, contraintes techniques, contraintes réglementaires, critères d'acceptation, priorisation MoSCoW). Cette expérience m'a appris la rigueur de la formalisation et le dialogue avec les équipes non-techniques — compétences que je réinvestis aujourd'hui dans tous mes projets data, à commencer par ChurnGuard. Document confidentiel : pas de code ni de lien public.",
+    "snapshot": "YYYY",
+    "tags": [
+      "Cahier des charges",
+      "Analyse fonctionnelle",
+      "Recueil de besoins",
+      "Spécifications",
+      "Confidentiel"
+    ],
+    "links": [
+      {
+        "text": "Confidential project – details available on request",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "dev",
+    "date": "2024",
+    "title": "Paris 2024 Football Simulator",
+    "icon": "YYYY",
+    "headline": "Simulation du tournoi olympique de football",
+    "description": "Site web interactif (HTML/CSS/JavaScript) simulant l'intégralité du tournoi de football des Jeux Olympiques Paris 2024, depuis la phase de poules jusqu'à la finale, avec affichage dynamique des résultats et progression jusqu'au vainqueur final.",
+    "details": "Application front-end développée en vanilla JavaScript. Modélisation du bracket complet du tournoi olympique avec les vraies équipes engagées. Logique de simulation : tirage aléatoire pondéré tenant compte d'un score de force pour chaque équipe. Interface utilisateur permettant de lancer une simulation complète et de naviguer entre les différents tours (phase de groupes, quarts, demis, finale). Affichage progressif des résultats avec mise à jour dynamique du tableau du tournoi. Projet réalisé en pur HTML/CSS/JS, sans framework, pour bien maîtriser les fondamentaux du web.",
+    "snapshot": "YYYY",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Front-end",
+      "Simulation",
+      "Vanilla JS"
+    ],
+    "links": [
+      {
+        "text": "View Code",
+        "url": "https://github.com/roderick-darell/Modelisation_web_jeu_olympique.git"
+      },
+      {
+        "text": "Live Demo",
+        "url": "XX"
+      }
+    ]
+  }
+]

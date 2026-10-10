@@ -4,6 +4,7 @@
  */
 
 import { sanitizeHTML, sanitizeURL, sanitizeEmbed, pauseAllMedia, getProjectTypeIcon } from './utils.js';
+import { isPlaceholderImage } from '../../utils/project-icons.js';
 import { setModalOpen, removeModalOpen, initializeModalCloseHandlers, initializeModalNavigation, handleModalIframeSpinner, initializeModalTouchSwipe, closeModal, resetModalStyles } from './modals.js';
 
 // Project data loaded from JSON file
@@ -46,6 +47,35 @@ function initializeProjectCards() {
       openProjectModal(index);
     });
   });
+
+  initializeProjectFilters();
+}
+
+/**
+ * Filter buttons: show all projects, only data projects, or only the others.
+ * Cards keep their data-project index, so the modal still opens the right project.
+ */
+function initializeProjectFilters() {
+  const buttons = document.querySelectorAll('.project-filter');
+  const cards = document.querySelectorAll('.project-card');
+  if (!buttons.length) return;
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+
+      buttons.forEach((b) => {
+        const active = b === button;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+
+      cards.forEach((card) => {
+        const visible = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('is-filtered-out', !visible);
+      });
+    });
+  });
 }
 
 /**
@@ -70,7 +100,8 @@ function openProjectModal(projectIndex) {
   const type = rawType ? sanitizeHTML(rawType.charAt(0).toUpperCase() + rawType.slice(1).toLowerCase()) : '';
   const date = sanitizeHTML(project.date || '');
   const credits = sanitizeHTML(project.credits || '');
-  const details = sanitizeHTML(project.details || '');
+  // Line breaks (\n) in details become paragraph breaks in the modal
+  const details = sanitizeHTML(project.details || '').replace(/\n/g, '<br>');
 
   // Sanitize URLs
   const iconURL = sanitizeURL(project.icon);
@@ -81,7 +112,7 @@ function openProjectModal(projectIndex) {
     <div class="modal-header">
       <div class="modal-title-container">
         ${
-          project.icon
+          !isPlaceholderImage(project.icon)
             ? `<img src="${iconURL}" alt="${title} icon" class="modal-icon">`
             : `<i class="fas ${getProjectTypeIcon(project.type)}" class="modal-icon-fallback" aria-hidden="true"></i>`
         }
@@ -105,12 +136,13 @@ function openProjectModal(projectIndex) {
           <h3>Project Details</h3>
           <div class="modal-meta">
             ${project.type ? `<p class="modal-type"><strong>Type:</strong> ${type}</p>` : ''}
+            ${project.status ? `<p class="modal-date modal-status"><strong>Statut:</strong> ${sanitizeHTML(project.status)}</p>` : ''}
             ${project.date ? `<p class="modal-date"><strong>Date:</strong> ${date}</p>` : ''}
             ${project.credits ? `<p class="modal-credits"><strong>Credits:</strong> ${credits}</p>` : ''}
           </div>
           <p class="modal-details-text">${details}</p>
         </div>
-        ${project.snapshot ? `<img src="${snapshotURL}" alt="${title} snapshot" class="modal-screenshot" draggable="false">` : ''}
+        ${!isPlaceholderImage(project.snapshot) ? `<img src="${snapshotURL}" alt="${title} snapshot" class="modal-screenshot" draggable="false">` : ''}
       </div>
       <div class="modal-technologies">
         <h3>Tags</h3>

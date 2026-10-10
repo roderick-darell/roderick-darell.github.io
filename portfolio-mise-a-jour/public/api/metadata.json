@@ -1,0 +1,64 @@
+{
+  "facebookAppId": "",
+  "themeColor": "#2563eb",
+  "person": {
+    "name": "Roderick-Darell Tchinde",
+    "location": "Villeneuve-d'Ascq, France",
+    "tagline": "Étudiant en Master Informatique à l'Université de Lille. Je construis des projets data de bout en bout, du problème métier à l'outil utilisable. À la recherche d'un stage ou d'une alternance en data engineering / data science.",
+    "fullName": "TCHINDE SINGHE Roderick-Darell – Data Scientist",
+    "website": "https://roderick-darell.github.io/"
+  },
+  "about": {
+    "description": "Étudiant en Master Informatique à l'Université de Lille, après une licence Mathématiques-Informatique.\n\nCe qui me motive : partir d'un vrai problème, construire toute la chaîne de données (ingestion, entrepôt, modèle) et finir par un outil qu'un métier peut utiliser.\n\nJe travaille en ce moment sur deux problèmes de détection de fraude. Le premier est bancaire : les règles anti-blanchiment génèrent une majorité de fausses alertes et ne voient pas les circuits qui n'apparaissent que dans le réseau des transactions. Le second touche l'Assurance maladie : 723 M€ de fraudes stoppées en 2025, dont 73 % liées à des professionnels de santé, alors que le patient ne voit plus ce qui est facturé en son nom.\n\nAvant cela, ChurnGuard, déployé chez PrestiLife, combinait XGBoost et IA générative (Mistral + RAG) pour prévenir le départ de bénéficiaires.\n\nÀ la recherche d'un stage ou d'une alternance en data engineering / data science."
+  },
+  "skills": {
+    "Programming Languages": [
+      "Python",
+      "SQL",
+      "Java"
+    ],
+    "Machine Learning & Data Science": [
+      "scikit-learn",
+      "XGBoost",
+      "Feature Engineering"
+    ],
+    "Generative AI & LLM": [
+      "Mistral (Ollama)",
+      "RAG",
+      "Prompt Engineering"
+    ],
+    "Data Engineering": [
+      "Pandas",
+      "SQL avancé",
+      "FastAPI",
+      "Streamlit",
+      "GCP BigQuery"
+    ],
+    "Data Visualisation & BI": [
+      "Power BI",
+      "Matplotlib",
+      "Excel (VBA)"
+    ],
+    "Environnements & Outils": [
+      "Git / GitHub",
+      "Jupyter Notebooks",
+      "Linux"
+    ],
+    "Méthodologie": [
+      "Cahier des charges fonctionnel",
+      "POC → Production",
+      "Agile"
+    ],
+    "En cours d'acquisition (projets 2026)": [
+      "dbt",
+      "Airflow",
+      "DuckDB",
+      "PostgreSQL",
+      "Neo4j",
+      "Kafka",
+      "LightGBM",
+      "SHAP",
+      "Docker"
+    ]
+  }
+}

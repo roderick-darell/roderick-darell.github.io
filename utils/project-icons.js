@@ -6,8 +6,12 @@
  */
 export function getProjectTypeIcon(projectType) {
   switch (projectType) {
+    case 'data':
+      return 'fa-database';
     case 'dev':
       return 'fa-code';
+    case 'pro':
+      return 'fa-briefcase';
     case 'film':
       return 'fa-video';
     case 'music':
@@ -19,3 +23,25 @@ export function getProjectTypeIcon(projectType) {
   }
 }
 
+
+/**
+ * Category used for the visible tag and the filter buttons.
+ * Every "data" project is tagged "Projet Data", everything else "Autre projet".
+ * @param {string} projectType
+ * @returns {{key: string, label: string}}
+ */
+export function getProjectCategory(projectType) {
+  return projectType === 'data'
+    ? { key: 'data', label: 'Projet Data' }
+    : { key: 'autre', label: 'Autre projet' };
+}
+
+/**
+ * True when an image path is still a placeholder (YYYY) or empty.
+ * Lets the site fall back to the type icon instead of a broken image.
+ * @param {string} path
+ * @returns {boolean}
+ */
+export function isPlaceholderImage(path) {
+  return !path || String(path).includes('YYYY');
+}
